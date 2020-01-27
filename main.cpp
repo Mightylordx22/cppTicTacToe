@@ -93,6 +93,19 @@ void boardChoice() {
             }
         }
         if (playerWin) {
+          for (auto &x : board) {
+                for (char y : x) {
+                    std::cout << y;
+                }
+                std::cout << std::endl;
+            }
+            std::cout << std::endl;
+          if(currentPlayer-1 == 0) {
+            std::cout << "Player 1 Wins!" << std::endl;
+          } else {
+            std::cout << "Player 2 Wins!" << std::endl;
+          }
+          
             break;
         }
     }
