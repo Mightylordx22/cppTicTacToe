@@ -19,8 +19,7 @@ bool playerWin = false;
  * Asks for the player's name and stores it in the global variable playerOneName.
  */
 void getPlayerName() {
-    std::cout << "Welcome to my game of Tic Tac Toe! (You are 'X') " << std::endl << "Please enter your name: "
-              << std::endl;
+    std::cout << "Welcome to my game of Tic Tac Toe! (You are 'X') " << std::endl << "Please enter your name: " << std::endl;
     std::cin >> playerOneName;
 }
 
@@ -49,7 +48,7 @@ bool checkLine() {
  * Validate the position the player wants to play by checking the character in the position passed in.
  * @param xPos The X position the current player has chosen.
  * @param yPos The Y position the current player has chosen.
- * @return
+ * @return true if the user's co-ordinates are valid otherwise return false
  */
 bool validatePos(int xPos, int yPos) {
     if (xPos >= 0 && xPos < 3 && yPos >= 0 && yPos < 3) {
